@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: nginx-3
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -44,7 +44,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
-        alb.ingress.kubernetes.io/ip-address-type: dualstack
+    alb.ingress.kubernetes.io/ip-address-type: dualstack
   name: nginx-3-ingress
 spec:
   rules:

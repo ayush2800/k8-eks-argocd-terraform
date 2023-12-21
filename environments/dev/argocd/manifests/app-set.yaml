@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/jayanath/k8-eks-argocd-terraform.git
+      repoURL: https://github.com/ayush2800/k8-eks-argocd-terraform.git
       revision: HEAD
       directories:
       - path: sample-apps/git-dir-generators/*
@@ -15,7 +15,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/jayanath/k8-eks-argocd-terraform.git
+        repoURL: https://github.com/ayush2800/k8-eks-argocd-terraform.git
         targetRevision: HEAD
         path: '{{path}}'
       destination:

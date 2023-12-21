@@ -48,7 +48,7 @@ metadata:
   name: nginx-2-ingress
 spec:
   rules:
-    - host: nginx2.jayforweb.com
+    - host: nginx2.ayushmsh.people.aws.dev
       http:
         paths:
           - path: /
@@ -60,5 +60,5 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - nginx2.jayforweb.com
+        - nginx2.ayushmsh.people.aws.dev
       secretName: aws-load-balancer-tls

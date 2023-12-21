@@ -4,7 +4,7 @@ data "terraform_remote_state" "vpc" {
   backend = "s3"
 
   config = {
-    bucket = "eks-terraform-state-jay-9975"
+    bucket = "ekstest-ayushmsh"
     key    = "k8-demo-vpc.tfstate"
     region = "us-west-2"
   }

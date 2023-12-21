@@ -15,7 +15,7 @@ metadata:
   namespace: argocd
 spec:
   rules:
-  - host: argo.jayforweb.com
+  - host: argo.ayushmsh.people.aws.dev
     http:
       paths:
       - path: /
@@ -34,4 +34,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - argo.jayforweb.com
+    - argo.ayushmsh.people.aws.dev

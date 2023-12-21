@@ -44,10 +44,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+        alb.ingress.kubernetes.io/ip-address-type: dualstack
   name: nginx-3-ingress
 spec:
   rules:
-    - host: nginx3.jayforweb.com
+    - host: nginx3.ayushmsh.people.aws.dev
       http:
         paths:
           - path: /
@@ -59,5 +60,5 @@ spec:
                   number: 80
   tls:
     - hosts:
-        - nginx3.jayforweb.com
+        - nginx3.ayushmsh.people.aws.dev
       secretName: aws-load-balancer-tls
